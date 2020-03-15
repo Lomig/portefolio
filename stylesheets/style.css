@@ -118,12 +118,13 @@ body {
   }
 
   .background {
-    height: calc(100vh - 305px);
-    height: calc(var(--vh, 1vh) * 100 - 305px);
+    height: calc(100vh - 350px);
+    height: calc(var(--vh, 1vh) * 100 - 350px);
   }
 
   .content {
-    height: 304px;
+    height: 349px;
+    border-left: 0;
     border-bottom: 1px solid var(--my-dark-grey);
   }
 
