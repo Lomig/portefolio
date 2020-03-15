@@ -105,8 +105,17 @@ body {
   padding: 0;
 }
 
+.menu ul:hover > li {
+  opacity: 0.4;
+}
+
+.menu ul > li:hover {
+  opacity: 1;
+}
+
 .menu li {
   padding: 16px 0;
+  transition: opacity 1s ease;
 }
 
 @media screen and (max-width: 840px) {
