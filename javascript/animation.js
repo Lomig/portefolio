@@ -1,5 +1,5 @@
 const tempest = () => {
-  const drops = 900;
+  const dropRatio = 1000;
   const length = 75;
   const interval = 75;
   const angle = 35;
@@ -7,8 +7,9 @@ const tempest = () => {
   const stroke = 2.5;
 
   const container = document.querySelector(".side");
-  let height = container.offsetHeight;
-  let width = container.offsetWidth;
+  let height = parseInt(container.offsetHeight);
+  let width = parseInt(container.offsetWidth);
+  let drops = Math.round((dropRatio * (height * width)) / 450000);
 
   const canvas = document.getElementById("backgroundCanvas");
   const context = canvas.getContext("2d");
@@ -16,7 +17,7 @@ const tempest = () => {
   canvas.setAttribute("height", height);
   canvas.setAttribute("width", width);
 
-  const rain = [];
+  let rain = [];
 
   const randomAttributes = index => {
     rain[index] = {};
@@ -29,11 +30,12 @@ const tempest = () => {
   };
 
   const refresh = () => {
-    height = container.offsetHeight;
-    width = container.offsetWidth;
-    console.log(height, width);
+    height = parseInt(container.offsetHeight);
+    width = parseInt(container.offsetWidth);
     canvas.setAttribute("height", height);
     canvas.setAttribute("width", width);
+    drops = Math.round((dropRatio * (height * width)) / 450000);
+    rain = [];
 
     Array(drops)
       .fill()
