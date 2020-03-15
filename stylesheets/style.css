@@ -118,11 +118,18 @@ body {
   }
 
   .background {
-    height: calc(100vh - 300px);
+    height: calc(100vh - 305px);
+    height: calc(var(--vh, 1vh) * 100 - 305px);
   }
 
   .content {
+    height: 304px;
     border-bottom: 1px solid var(--my-dark-grey);
+  }
+
+  .menu {
+    justify-self: center;
+    text-align: center;
   }
 }
 
@@ -131,9 +138,19 @@ body {
     font-size: 100px;
   }
 
+  .title {
+    grid-template-columns: auto 55px;
+    grid-template-rows: auto 16px;
+  }
+
+  .content {
+    height: 234px;
+  }
+
   .background,
   .side {
-    height: calc(100vh - 200px);
+    height: calc(100vh - 235px);
+    height: calc(var(--vh, 1vh) * 100 - 235px);
     overflow: hidden;
   }
 

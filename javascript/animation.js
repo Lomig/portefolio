@@ -78,4 +78,4 @@ const tempest = () => {
   setInterval(drawRain, interval);
 };
 
-document.addEventListener("DOMContentLoaded", tempest);
+export { tempest };
