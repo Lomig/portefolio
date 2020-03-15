@@ -6,9 +6,9 @@ const tempest = () => {
   const opacity = 0.2;
   const stroke = 2.5;
 
-  const background = document.querySelector(".background");
-  let height = background.offsetHeight;
-  let width = background.offsetWidth;
+  const container = document.querySelector(".side");
+  let height = container.offsetHeight;
+  let width = container.offsetWidth;
 
   const canvas = document.getElementById("backgroundCanvas");
   const context = canvas.getContext("2d");
@@ -29,9 +29,9 @@ const tempest = () => {
   };
 
   const refresh = () => {
-    height = background.offsetHeight;
-    width = background.offsetWidth;
-
+    height = container.offsetHeight;
+    width = container.offsetWidth;
+    console.log(height, width);
     canvas.setAttribute("height", height);
     canvas.setAttribute("width", width);
 

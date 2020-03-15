@@ -12,11 +12,10 @@ body {
   grid-template-areas: "ocean main";
   grid-template-columns: 33fr 67fr;
   grid-template-rows: 1fr;
-  height: 100%;
-  width: 100%;
 }
 
 .content {
+  grid-area: main;
   border-left: 1px solid #5a7988;
   display: grid;
   grid-template-rows: min-content;
@@ -70,9 +69,11 @@ body {
 }
 
 .side {
+  grid-area: ocean;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
+  min-width: 0;
 }
 
 .menu {
@@ -90,8 +91,44 @@ body {
 
 .menu ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu li {
   padding: 16px 0;
+}
+
+@media screen and (max-width: 840px) {
+  .container {
+    grid-template-areas: "main" "ocean";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    width: 100%;
+  }
+
+  .background {
+    height: calc(100vh - 300px);
+  }
+
+  .content {
+    border-bottom: 1px solid #5a7988;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .name {
+    font-size: 100px;
+  }
+
+  .background,
+  .side {
+    height: calc(100vh - 200px);
+    overflow: hidden;
+  }
+
+  .menu li:first-child,
+  .menu li:last-child {
+    padding-top: 4px;
+  }
 }
