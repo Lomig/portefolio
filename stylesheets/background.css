@@ -1,12 +1,10 @@
 .background {
   background: url("../images/mer.jpg") no-repeat center center fixed;
   background-size: cover;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  top: 0;
+  height: 100vh;
   width: 100%;
   z-index: -1;
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 .background canvas {

@@ -1,4 +1,5 @@
 @import "background.css";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
 
 html,
 body {
@@ -6,8 +7,91 @@ body {
   margin: 0;
 }
 
-h1 {
+.container {
+  display: grid;
+  grid-template-areas: "ocean main";
+  grid-template-columns: 33fr 67fr;
+  grid-template-rows: 1fr;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  border-left: 1px solid #5a7988;
+  display: grid;
+  grid-template-rows: min-content;
+  align-content: center;
+}
+
+.fullname {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.name {
+  background: url(../images/mer.jpg) no-repeat;
+  background-position: bottom;
+  background-size: cover;
   color: #fff;
-  font-size: 40px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+
+  font-size: 150px;
+  font-family: Anton, sans-serif;
+  font-weight: bold;
   text-align: center;
+  transition: text-shadow 1s ease;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  margin: 0 4px;
+  padding: 0;
+  -webkit-text-stroke: 1px #5a7988;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: auto 79px;
+  grid-template-rows: auto 20px;
+}
+
+.name.last {
+  grid-area: 1 / 1 / 3 / 3;
+}
+
+.subtitle {
+  grid-area: 2 / 1 / 3 / 2;
+  text-align: right;
+  align-self: center;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #293b44;
+}
+
+.side {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.menu {
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: end;
+  margin: 0 16px;
+  color: white;
+  align-self: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-align: right;
+  -webkit-text-stroke: 1px #293b44;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu li {
+  padding: 16px 0;
 }
