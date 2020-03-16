@@ -1,10 +1,19 @@
 .background {
-  background: url("../images/mer.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   width: 100%;
   z-index: -1;
   grid-area: 1 / 1 / 2 / 2;
+}
+
+#background-home {
+  background: url("../images/mer.jpg") no-repeat center center fixed;
+}
+
+#background-contact {
+  display: none;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/wave.jpg") no-repeat center center fixed;
 }
 
 .background canvas {
