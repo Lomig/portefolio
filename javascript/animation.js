@@ -75,7 +75,8 @@ const tempest = () => {
 
   refresh();
 
-  setInterval(drawRain, interval);
+  const intervalId = setInterval(drawRain, interval);
+  canvas.dataset.interval = intervalId;
 };
 
 export { tempest };

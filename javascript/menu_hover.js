@@ -23,13 +23,18 @@ const initialize = item => {
   item.removeEventListener("mouseleave", onMouseLeaveActive);
 };
 
-const menuHover = () => {
+const menuHover = page => {
+  if (page !== "home") {
+    const canvas = document.getElementById("backgroundCanvas");
+    clearInterval(canvas.dataset.interval);
+    canvas.style.display = "none";
+  }
+
   const menuItems = document.querySelectorAll(".menu li");
-  const container = document.querySelector(".container");
 
   menuItems.forEach(item => {
     initialize(item);
-    if (container.dataset.page !== item.dataset.page) {
+    if (page !== item.dataset.page) {
       item.addEventListener("mouseenter", onMouseEnterActive);
       item.addEventListener("mouseleave", onMouseLeaveActive);
     } else {

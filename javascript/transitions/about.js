@@ -30,22 +30,21 @@ const onClicked = event => {
   container.dataset.page = event.target.dataset.page;
 
   const activeBackground = document.querySelector(".background.active");
-  const contactBackground = document.getElementById("background-contact");
-
+  const contactBackground = document.getElementById("background-about");
   fade(activeBackground, contactBackground);
 
   const activeContainer = document.querySelector(".content.active");
-  const currentContainer = document.getElementById("content-contact");
+  const currentContainer = document.getElementById("content-about");
   currentContainer.classList.add("active");
   activeContainer.classList.remove("active");
 
-  menuHover("contact");
+  menuHover("about");
 };
 
-const initContactClick = () => {
-  const contactButton = document.getElementById("contact-button");
+const initAboutClick = () => {
+  const contactButton = document.getElementById("about-button");
 
   contactButton.addEventListener("click", onClicked);
 };
 
-export { initContactClick };
+export { initAboutClick };

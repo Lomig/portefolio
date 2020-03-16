@@ -1,0 +1,16 @@
+.content {
+  grid-area: content;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+}
+
+.content.active {
+  z-index: 0;
+}
+
+#content-home {
+  display: grid;
+  grid-template-rows: min-content 0fr;
+  align-content: center;
+}
