@@ -4,7 +4,7 @@ import { menuHover } from "./menu_hover.js";
 
 import { initAboutClick } from "./transitions/about.js";
 import { initSkillsClick } from "./transitions/skills.js";
-import { initPortfolioClick } from "./transitions/portfolio.js";
+// import { initPortfolioClick } from "./transitions/portfolio.js";
 import { initContactClick } from "./transitions/contact.js";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -14,6 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   initAboutClick();
   initSkillsClick();
-  initPortfolioClick();
+  // initPortfolioClick();
   initContactClick();
 });
