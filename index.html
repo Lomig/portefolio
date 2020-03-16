@@ -12,31 +12,23 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-
-    <style>
-      html {
-        height: 100%;
-      }
-
-      body {
-        margin: 0;
-        height: 100%;
-      }
-    </style>
   </head>
 
   <body>
-    <div class="container">
+    <div class="container" data-page="home">
       <div class="side">
-        <div class="background">
+        <div class="background active" id="background-home">
           <canvas id="backgroundCanvas"> </canvas>
         </div>
+
+        <div class="background" id="background-contact"></div>
+
         <div class="menu">
           <ul>
-            <li>About me</li>
-            <li>Skills</li>
-            <li>Portfolio</li>
-            <li>Contact</li>
+            <li id="about-button" data-page="about">About me</li>
+            <li id="skills-button" data-page="skills">Skills</li>
+            <li id="portfolio-button" data-page="portfolio">Portfolio</li>
+            <li id="contact-button" data-page="contact">Contact</li>
           </ul>
         </div>
       </div>
