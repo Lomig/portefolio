@@ -38,7 +38,7 @@ const onClicked = event => {
   currentContainer.classList.add("active");
   activeContainer.classList.remove("active");
 
-  menuHover("about");
+  menuHover("portfolio");
 };
 
 const initPortfolioClick = () => {
