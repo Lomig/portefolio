@@ -1,6 +1,7 @@
 import { tempest } from "./animation.js";
 import { updateHeight } from "./mobile_vh.js";
-import { menuHover } from "./menu_hover.js";
+
+import { showImages, menuHover } from "./menu.js";
 
 import { initAboutClick } from "./transitions/about.js";
 import { initSkillsClick } from "./transitions/skills.js";
@@ -10,6 +11,8 @@ import { initContactClick } from "./transitions/contact.js";
 document.addEventListener("DOMContentLoaded", () => {
   updateHeight();
   tempest();
+
+  showImages();
   menuHover("home");
 
   initAboutClick();

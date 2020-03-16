@@ -1,4 +1,4 @@
-import { menuHover } from "../menu_hover.js";
+import { menuHover } from "../menu.js";
 
 const fade = (fadeout, fadein) => {
   fadeout.style.opacity = 1;

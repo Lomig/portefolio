@@ -43,4 +43,17 @@ const menuHover = page => {
   });
 };
 
-export { menuHover };
+const showImages = () => {
+  const backgrounds = document.querySelectorAll(".background");
+  const contents = document.querySelectorAll(".content");
+
+  backgrounds.forEach(background => {
+    background.style.display = null;
+  });
+
+  contents.forEach(content => {
+    content.style.display = null;
+  });
+};
+
+export { showImages, menuHover };
