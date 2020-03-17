@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  grid-template-areas: "side main";
+  grid-template-columns: 33fr 67fr;
+  grid-template-rows: 1fr;
+}
+
+.side {
+  grid-area: side;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  min-width: 0;
+}
+
+.main {
+  grid-area: main;
+  border-left: 1px solid var(--separation-color);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "content";
+  background: white;
+}

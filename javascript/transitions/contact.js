@@ -1,4 +1,4 @@
-import { menuHover } from "../menu.js";
+import { showImages, menuHover } from "../menu.js";
 
 const fade = (fadeout, fadein) => {
   fadeout.style.opacity = 1;
@@ -21,6 +21,8 @@ const fade = (fadeout, fadein) => {
 };
 
 const onClicked = event => {
+  showImages();
+
   const container = document.querySelector(".container");
 
   if (event.target.dataset.page === container.dataset.page) {
@@ -39,6 +41,10 @@ const onClicked = event => {
   currentContainer.classList.add("active");
   activeContainer.classList.remove("active");
 
+  document.documentElement.style.setProperty(
+    "--separation-color",
+    "var(--dark-sienna)"
+  );
   menuHover("contact");
 };
 

@@ -1,39 +1,14 @@
+@import "colors.css";
+@import "grid.css";
 @import "background.css";
 @import "main.css";
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap");
 
-:root {
-  --my-black: #03131c;
-  --my-dark-grey: #293b44;
-  --my-grey: #4a565d;
-  --my-light-blue: #b5c6d0;
-  --my-blue: #708d9c;
-  --my-dark-blue: #5a7988;
-  --my-white: #ffffff;
-}
-
 html,
 body {
   height: 100px;
   margin: 0;
-}
-
-.container {
-  display: grid;
-  grid-template-areas: "ocean main";
-  grid-template-columns: 33fr 67fr;
-  grid-template-rows: 1fr;
-}
-
-.main {
-  grid-area: main;
-  border-left: 1px solid var(--my-dark-blue);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "content";
-  background: white;
 }
 
 .fullname {
@@ -59,7 +34,7 @@ body {
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
   margin: 0 4px;
   padding: 0;
-  -webkit-text-stroke: 1px var(--my-dark-blue);
+  -webkit-text-stroke: 1px var(--yankees-blue);
 }
 
 .title {
@@ -79,15 +54,7 @@ body {
 
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  color: var(--my-dark-grey);
-}
-
-.side {
-  grid-area: ocean;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  min-width: 0;
+  color: var(--yankees-blue);
 }
 
 .menu {
@@ -100,7 +67,7 @@ body {
   font-weight: 600;
   font-size: 40px;
   text-align: right;
-  -webkit-text-stroke: 1px var(--my-dark-grey);
+  -webkit-text-stroke: 1px var(--separation-color);
 }
 
 .menu ul {
@@ -156,7 +123,7 @@ body {
   .main {
     height: 349px;
     border-left: 0;
-    border-bottom: 1px solid var(--my-dark-grey);
+    border-bottom: 1px solid var(--separation-color);
   }
 
   .menu {

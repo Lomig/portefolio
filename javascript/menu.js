@@ -1,3 +1,5 @@
+let imageShown = false;
+
 const onMouseEnterActive = e => {
   const menuItems = document.querySelectorAll(".menu li");
   const container = document.querySelector(".container");
@@ -44,16 +46,22 @@ const menuHover = page => {
 };
 
 const showImages = () => {
+  if (imageShown) {
+    return;
+  }
+
   const backgrounds = document.querySelectorAll(".background");
   const contents = document.querySelectorAll(".content");
 
   backgrounds.forEach(background => {
-    background.style.display = null;
+    background.removeAttribute("style");
   });
 
   contents.forEach(content => {
-    content.style.display = null;
+    content.removeAttribute("style");
   });
+
+  imageShown = true;
 };
 
 export { showImages, menuHover };

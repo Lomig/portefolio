@@ -1,0 +1,40 @@
+:root {
+  --my-white: #ffffff;
+
+  /* Home page colour palette */
+  --light-slate-grey: rgba(116, 132, 153, 1);
+  --japanese-indigo: rgba(44, 59, 75, 1);
+  --yankees-blue: rgba(18, 44, 59, 1);
+  --maastricht-blue: rgba(11, 28, 52, 1);
+  --prussian-blue: rgba(12, 60, 84, 1);
+
+  /* About page colour palette */
+  --big-foot-feet-1: rgba(241, 148, 89, 1);
+  --brown-yellow: rgba(217, 154, 104, 1);
+  --tuscan: rgba(252, 218, 167, 1);
+  --big-foot-feet-2: rgba(242, 140, 86, 1);
+  --outer-space: rgba(75, 76, 75, 1);
+
+  /* Skills page colour palette */
+  --puce: rgba(200, 139, 160, 1);
+  --raisin-black: rgba(41, 14, 32, 1);
+  --rich-black-1: rgba(4, 4, 4, 1);
+  --violet-blue: rgba(68, 76, 172, 1);
+  --rich-black-2: rgba(8, 4, 4, 1);
+
+  /* Portfolio colour palette */
+  --cyan-cobalt-blue-1: rgba(43, 91, 166, 1);
+  --baby-blue-eyes: rgba(164, 203, 229, 1);
+  --deep-koamaru: rgba(52, 46, 84, 1);
+  --cyan-cobalt-blue-2: rgba(38, 90, 172, 1);
+  --ball-blue: rgba(36, 156, 204, 1);
+
+  /* Contact colour palette */
+  --rosy-brown: rgba(185, 163, 143, 1);
+  --beaver: rgba(153, 132, 108, 1);
+  --black-shadows: rgba(190, 178, 172, 1);
+  --burnished-brown: rgba(164, 123, 115, 1);
+  --dark-sienna: rgba(63, 20, 17, 1);
+
+  --separation-color: var(--yankees-blue);
+}
